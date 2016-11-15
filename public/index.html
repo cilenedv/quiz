@@ -5,113 +5,115 @@
 	<link rel='stylesheet' href='/stylesheets/font-awesome.css' />
 	<link rel="stylesheet" href="/stylesheets/style.css" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.ico">
 </head>
-<body>
-<div class="row">
-	<div id="realresults" class="none">
-		<div class="col-md-12">
-			<div class="col-md-6">
-				<h4><span id="copiaNombre2"></span><br>Tú Puntaje es: <b><div id="myresult" >0</div></b></h4>
+<body class="fondo">
+<section class="inicio">
+	<div class="just_start" >
+		<img class="center-block" src="img/logo.png" alt="logo">	
+		<div class="row text-center margin">
+			<div class="col-md-12 col-xs-12">
+				<h2>Concursa a tiempo real </h2>
+				<input type="text" id="input_user" placeholder="Ingrese su nombre..." required ><br>
+				<button class="btn btn-lg btn-start" id='btnJoin'>Jugar!</button>
 			</div>
-			<div class="col-md-6 text-right">
-				<h4>El puntaje de <b><br><span id="usuario"></span><div id="otherresult" >0</div></b></h4>
+		</div>
+	</div>
+</section>
+<section class="instrucciones">
+	<div class="row">
+		<div class="col-md-12 col-xs-12 text-center">
+			<div class="rules none">
+				<h2>2 Jugadores Conectados <br> El juego comenzara en 10 segundos ...</h2>
+					<div class="panel panel-warning"> 
+						<div class="panel-heading"> 
+							<h3 class="panel-title">Reglas</h3> 
+						</div> 
+						<div class="panel-body"> 
+							<ul  class="text-left">
+								<li>Tienes 10 segundos para responder cada pregunta </li>
+								<li>Da click en la respuesta. Despues de dar click se desabilitaran las demas repuestas(botones)</li>
+								<li>Son 4 preguntas</li>
+							</ul>
+						</div> 
+					</div> 
 			</div>
 		</div>
 	</div>
-</div>
-
-
-<div class="row">
-	<div class="col-md-12 text-center">
-		<div class="rules none">
-			<h2>2 Jugadores Conectados <br> El juego comenzara en 10 segundos ...</h2>
-				<div class="panel panel-warning"> 
-					<div class="panel-heading"> 
-						<h3 class="panel-title">Reglas</h3> 
-					</div> 
-					<div class="panel-body"> 
-						<ul  class="text-left">
-							<li>Tienes 10 segundos para responder cada pregunta </li>
-							<li>Da click en la respuesta. Despues de dar click se desabilitaran las demas repuestas(botones)</li>
-							<li>Son 4 preguntas</li>
-						</ul>
-					</div> 
-				</div> 
+</section>
+<section class="preguntas">
+	<div class="row">
+		<div id="realresults" class="none">
+			<div class="col-md-12 col-xs-12">
+				<div class="col-md-6 col-xs-6">
+					<h3><span id="copiaNombre2"></span><br>Tú Puntaje es: <b><div id="myresult" >0</div></b></h3>
+				</div>
+				<div class="col-md-6 col-xs-6 text-right">
+					<h3>El puntaje de <b><br><span id="usuario"></span><div id="otherresult" >0</div></b></h3>
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
+	<div class="row started none" id="realtime"> 
+		<div class="question">
+			<div class="row text-center">
+			  <div class="col-md-12 col-xs-12"><h2>
+			  <br>
+			  <p id="qst"></p>
+			  </h2></div>
+			</div>
+		</div>
 
-
-<div class="row started none" id="realtime"> 
-	<div class="question">
-		<div class="row text-center">
-		  <div class="col-md-12"><h2>
-		  <br>
-		  <p id="qst"></p>
-		  </h2></div>
+		<div class="choices">
+			<div class="row">
+			  <div class="col-md-4 col-sm-6 col-md-offset-3 col-xs-6">
+			  	<button id="btn1" value=""></button>
+			  </div>
+			  <div class="col-md-3  col-sm-6 col-xs-6">
+			  	<button id="btn2" value=""></button>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-md-4 col-sm-6 col-md-offset-3 col-xs-6">
+			  	<button id="btn3" value=""></button>
+			  </div>
+			  <div class="col-md-3 col-sm-6 col-xs-6">
+			  	<button id="btn4" value=""></button>
+			  </div>
+			</div>
 		</div>
 	</div>
+	<div class="current_res_c text-center none">
+		<div class='alert alert-success' role='alert'>¡Bien hecho! Respuesta Corresta </div>
+	</div>
 
-	<div class="choices">
-		<div class="row">
-		  <div class="col-md-4 col-sm-6 col-md-offset-3">
-		  	<button id="btn1" value=""></button>
-		  </div>
-		  <div class="col-md-3  col-sm-6">
-		  	<button id="btn2" value=""></button>
-		  </div>
+	<div class="current_res_w text-center none " >
+		<div class='alert alert-danger' role='alert'>¡Ohhhh! Respuesta incorrecta</div>
+	</div>
+	<div class="intermediate">
+		<span id="copiaNombre"></span>
+		<div id="conversation"> </div>
+	</div>
+	<div id="view_result"></div>
+	<div class="loading-page none">
+		<div class="counter">
+			<h3>0 segundos</h3>
+			<hr>
 		</div>
-		<div class="row">
-		  <div class="col-md-4 col-sm-6 col-md-offset-3">
-		  	<button id="btn3" value=""></button>
-		  </div>
-		  <div class="col-md-3 col-sm-6">
-		  	<button id="btn4" value=""></button>
-		  </div>
+	</div>
+</section>
+
+<section class="resultados finales">
+	<div id="finalresult_show" class="none">
+		<div id="finalresult">
+		¡Empate!
+		</div>
+		<br>
+		<div>
+			<a href="http://localhost:4444">Juega de nuevo...</a>
 		</div>
 	</div>
-</div>
-
-<div class="current_res_c text-center none">
-<div class='alert alert-success' role='alert'>¡Bien hecho! Respuesta Corresta </div>
-</div>
-
-<div class="current_res_w text-center none " >
-<div class='alert alert-danger' role='alert'>¡Ohhhh! Respuesta incorrecta</div>
-</div>
-
-<div class="intermediate">
-	<span id="copiaNombre"></span>
-	<div id="conversation"> </div>
-
-</div>
-
-<div class="just_start" >
-	<div class="row text-center">
-		<h2>Concursa a tiempo real </h2>
-		<input type="text" id="input_user" placeholder="Ingrese su nombre..." required ><br>
-		<button class="btn btn-lg btn-start" id='btnJoin'>Jugar!</button>
-	</div>
-</div>
-<div id="view_result"></div>
-<div class="loading-page none">
-	<div class="counter">
-		<h3>0 segundos</h3>
-		<hr>
-	</div>
-</div>
-
-<!--Timer-->
-
-<div id="finalresult_show" class="none">
-	<div id="finalresult">
-	Tie
-	</div>
-	<br>
-	<div>
-		<a href="http://localhost:4444">Juega de nuevo...</a>
-	</div>
-</div>
+</section>
 <script src="/socket.io/socket.io.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 <script src="js/main.js"></script>

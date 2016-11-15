@@ -1,16 +1,28 @@
 body{
     font-family: 'Roboto', sans-serif;
+    padding-top: 78px;
 }
 
 h2{
     color: #ee714e;
   }
-
+.fondo{
+  background-image: url("../img/photo4.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 #realresults{
     color: #ee714e;
 }
 .none{
   display: none;
+}
+
+.row{
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .just_start input[type="text"] {
     width: 400px;
@@ -33,11 +45,6 @@ h2{
     padding: 10px;
     margin-top: 70px;
     }
-
-.just_start, .started, .intermediate,.rules{
-    background-color: #fff;
-    }
-
 .rules{
     width: 700px;
     position: absolute;
@@ -66,9 +73,9 @@ h2{
 
 #finalresult_show a{
     margin-top:200px;
-    font-size: 17px;
+    font-size: 22px;
     text-align: center;
-    color: #a2a2a2;
+    color: white;
     padding: 10px;
 }
 
