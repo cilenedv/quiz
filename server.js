@@ -10,10 +10,12 @@ var usernames = {};
 var pairCount = 0, id, clientsno, pgmstart=0,varCounter;
 var scores = {};
 
-server.listen(4444);
-console.log("Listening to 4444")
-console.log("Connection Established !")
+app.set("port",process.env.PORT || 44444);
 
+server.listen(app.get("port"),function(){
+	console.log("Listening to 4444");
+	console.log("Connection Established !");
+});
 //Route
 app.get('/',function (req,res){
 	res.sendFile(__dirname + '/index.html');
