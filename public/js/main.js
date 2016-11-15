@@ -43,7 +43,7 @@ var socket = io.connect("http://localhost:4444");
 			  var counter = 0;
 			  var c = 1;
 			  var k = setInterval(function(){
-		      $(".loading-page .counter h3").html(c + "sec");
+		      $(".loading-page .counter h3").html(c + "segundos");
 		      $(".loading-page .counter hr").css("width", (c*10) + "%");
 		  
 			    counter++;
@@ -92,8 +92,6 @@ var socket = io.connect("http://localhost:4444");
 
 		}, 10000);
 
-		
-
 	});
 
 	socket.on('viewresult',function(usr){
@@ -108,16 +106,16 @@ var socket = io.connect("http://localhost:4444");
 		}
 
 		if(myscore>otherscore){
-			$("#finalresult").text("You Win!");
+			$("#finalresult").text("¡Felicitaciones " + username +" ganaste!");
 			//finalresults=0;
 			//console.log("final winner");
 		} else if(myscore<otherscore){
-			$("#finalresult").text("You Lose..");
+			$("#finalresult").text("¡Oh, perdiste! :( "+ username + " repasa un poco más");
 			//finalresults=1;
 			//console.log("final loser");
 		} else{
 			//finalresults=2;
-			$("#finalresult").text("Tie!");
+			$("#finalresult").text("¡Empate!");
 		}
 
 	});
@@ -128,7 +126,7 @@ var socket = io.connect("http://localhost:4444");
           $(".just_start").fadeOut();
           username = $("#input_user").val();
           var data={
-          	name:username,status:"cotectado.."
+          	name:username,status:"conectado.."
           };
           socket.emit("conectado",data);
           if(username !=''){

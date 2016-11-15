@@ -1,8 +1,8 @@
 {"questions":[
-	{"question": "Which is the capital of india?", "choices": ["New delhi", "Mumbai", "Banglore", "Mysore"], "correctAnswer":0},
-	{"question": "Total number of states in India", "choices": ["27", "28", "29", "30"], "correctAnswer":2},
-	{"question": "Current President of India?", "choices": ["Pranab Mukherjee", "Pratibha Patil", "Narendra modi", "Manmohan singh"], "correctAnswer":0},
-	{"question": "Current Prime Minister of India?", "choices": ["Pratibha Patil", "Pranab Mukherjee", "Manmohan singh", "Narendra modi"], "correctAnswer":3}
+	{"question": "¿Qué códigode respuesta devuelve al realizar una petición asíncrona exitosa(mensaaje:OK)?", "choices": ["200", "403", "404", "500"], "correctAnswer":0},
+	{"question": "¿Qué código de respuesta devuelve al realizar una petición asíncrona sin éxito(Mensaje: Not Found) en la cual nose encuentra el archivo requerido?", "choices": ["200", "403", "404", "500"], "correctAnswer":2},
+	{"question": "¿Cuál es el significado de las siglas CRUD?", "choices": ["Create Read Update Delete", "Call Run Use Die", "Call Read Update Delete", "Create Run Update Delete"], "correctAnswer":0},
+	{"question": "En una arquitectura REST, ¿Qué método HTTP usaría para actualizar un registro de una película?", "choices": ["GET", "POST", "PUT", "DELETE"], "correctAnswer":2}
 ]}
 
 

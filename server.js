@@ -20,7 +20,7 @@ app.get('/',function (req,res){
 });
 
 io.sockets.on('connection', function(socket){
-	console.log("New Client Arrived!");
+	console.log("¡Nuevo cliente llegó!");
 
 	socket.on('addClient', function(username){
 		socket.username = username;
@@ -62,7 +62,6 @@ io.sockets.on('connection', function(socket){
 
 		}  
 	});
-
 
 	socket.on('result', function (usr,rst) {
 		
