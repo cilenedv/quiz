@@ -133,7 +133,7 @@ var socket = io();
             socket.emit('addClient', username);
           } else {
             alert("USERNAME PLEASE!");
-            window.location="http://localhost:4444";
+            window.location="https://quiztr.herokuapp.com/";
           }
           localStorage.setItem("username", username);
           var nombreValido=localStorage.getItem("username");

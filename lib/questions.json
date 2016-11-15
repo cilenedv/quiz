@@ -1,5 +1,5 @@
 {"questions":[
-	{"question": "¿Qué códigode respuesta devuelve al realizar una petición asíncrona exitosa(mensaaje:OK)?", "choices": ["200", "403", "404", "500"], "correctAnswer":0},
+	{"question": "¿Qué código de respuesta devuelve al realizar una petición asíncrona exitosa(mensaaje:OK)?", "choices": ["200", "403", "404", "500"], "correctAnswer":0},
 	{"question": "¿Qué código de respuesta devuelve al realizar una petición asíncrona sin éxito(Mensaje: Not Found) en la cual nose encuentra el archivo requerido?", "choices": ["200", "403", "404", "500"], "correctAnswer":2},
 	{"question": "¿Cuál es el significado de las siglas CRUD?", "choices": ["Create Read Update Delete", "Call Run Use Die", "Call Read Update Delete", "Create Run Update Delete"], "correctAnswer":0},
 	{"question": "En una arquitectura REST, ¿Qué método HTTP usaría para actualizar un registro de una película?", "choices": ["GET", "POST", "PUT", "DELETE"], "correctAnswer":2}
