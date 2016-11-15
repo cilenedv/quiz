@@ -1,4 +1,4 @@
-var socket = io.connect("http://localhost:4444");
+var socket = io();
 	var i,username,j=0,myscore=0,otherscore=0,finalresults,ti,user_id;
 	
 	socket.on('updatechat', function (username, data,id) {
