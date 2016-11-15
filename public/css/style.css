@@ -1,6 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
-    padding-top: 78px;
+    padding-top: 10px;
 }
 
 h2{
@@ -19,13 +19,16 @@ h2{
 .none{
   display: none;
 }
+.imagen{
+  width: 100%;
+}
 
 .row{
   margin-left: 0px;
   margin-right: 0px;
 }
 .just_start input[type="text"] {
-    width: 400px;
+    width: 300px;
     margin-top: 30px;
     padding: 0.5em 0;
     color: #ee714e;
@@ -56,7 +59,7 @@ h2{
   margin-top: 150px;
 }
 
-.started, .current_res_c, .current_res_w{
+.started{
     margin-top: 100px;
 }       
 

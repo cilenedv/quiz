@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-	<title>Real time Quiz</title>
-	<link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
-	<link rel='stylesheet' href='/stylesheets/font-awesome.css' />
-	<link rel="stylesheet" href="/stylesheets/style.css" />
+	<title>La hora del saber</title>
+	<link rel='stylesheet' href='/css/bootstrap.min.css' />
+	<link rel='stylesheet' href='/css/font-awesome.css' />
+	<link rel="stylesheet" href="/css/style.css" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="shortcut icon" href="img/favicon.ico">
 </head>
@@ -12,7 +12,7 @@
 	<div class="just_start" >
 		<img class="center-block" src="img/logo.png" alt="logo">	
 		<div class="row text-center margin">
-			<div class="col-md-12 col-xs-12">
+			<div class="col-md-12 col-xs-12 col-sm-12">
 				<h2>Concursa a tiempo real </h2>
 				<input type="text" id="input_user" placeholder="Ingrese su nombre..." required ><br>
 				<button class="btn btn-lg btn-start" id='btnJoin'>Jugar!</button>
@@ -22,7 +22,7 @@
 </section>
 <section class="instrucciones">
 	<div class="row">
-		<div class="col-md-12 col-xs-12 text-center">
+		<div class="col-md-12 col-xs-12 col-sm-12 text-center">
 			<div class="rules none">
 				<h2>2 Jugadores Conectados <br> El juego comenzara en 10 segundos ...</h2>
 					<div class="panel panel-warning"> 
@@ -44,7 +44,7 @@
 <section class="preguntas">
 	<div class="row">
 		<div id="realresults" class="none">
-			<div class="col-md-12 col-xs-12">
+			<div class="col-md-12 col-xs-12 col-sm-12">
 				<div class="col-md-6 col-xs-6">
 					<h3><span id="copiaNombre2"></span><br>Tú Puntaje es: <b><div id="myresult" >0</div></b></h3>
 				</div>
@@ -57,13 +57,12 @@
 	<div class="row started none" id="realtime"> 
 		<div class="question">
 			<div class="row text-center">
-			  <div class="col-md-12 col-xs-12"><h2>
+			  <div class="col-md-12 col-xs-12 col-sm-12"><h2>
 			  <br>
 			  <p id="qst"></p>
 			  </h2></div>
 			</div>
 		</div>
-
 		<div class="choices">
 			<div class="row">
 			  <div class="col-md-4 col-sm-6 col-md-offset-3 col-xs-6">
@@ -86,7 +85,6 @@
 	<div class="current_res_c text-center none">
 		<div class='alert alert-success' role='alert'>¡Bien hecho! Respuesta Corresta </div>
 	</div>
-
 	<div class="current_res_w text-center none " >
 		<div class='alert alert-danger' role='alert'>¡Ohhhh! Respuesta incorrecta</div>
 	</div>
