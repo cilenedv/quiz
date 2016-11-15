@@ -18,7 +18,7 @@ git clone https://github.com/cilenedv/quiz.git
 3. En tu browser ( navegador )
 #### visit http://localhost:4444
 
-![image](http://i67.tinypic.com/i1y82h.jpg {width=40px height=100px})
+![image](http://i65.tinypic.com/ab1b1v.jpg {width=40px height=100px})
 ![image](http://i65.tinypic.com/15rfblw.jpg {width=40px height=100px})
 
 
