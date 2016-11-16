@@ -4,7 +4,7 @@ Requerimientos:
 - Express
 - Socket.io
 
-1. Clona el repositorio 
+- Clona el repositorio 
 
 git clone https://github.com/cilenedv/quiz.git
 
