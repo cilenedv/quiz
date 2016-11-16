@@ -17,6 +17,7 @@ git clone https://github.com/cilenedv/quiz.git
 
 3. En tu browser ( navegador )
 #### visit http://localhost:4444
+#### Link de Heroku https://quiztr.herokuapp.com/
 
 ![image](http://i65.tinypic.com/ab1b1v.jpg {width=40px height=100px})
 ![image](http://i65.tinypic.com/15rfblw.jpg {width=40px height=100px})
